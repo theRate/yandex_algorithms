@@ -3,7 +3,7 @@ m_anchor, m_range = map(int, input().split())
 
 anchors = [v_anchor, m_anchor]
 anchors.sort()
-result = 0
+
 if anchors[1] - anchors[0] > v_range + m_range:
     result = (v_range + m_range) * 2 + 2
 else:
