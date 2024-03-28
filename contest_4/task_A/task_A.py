@@ -32,6 +32,6 @@ for b in k_list:
     if left_index == right_index and not b[0] <= n_list[left_index] <= b[1]:
         result.append(0)
     else:
-        result.append(len(n_list[left_index:right_index]) + 1)
+        result.append(right_index - left_index + 1)
 
 print(*result)
